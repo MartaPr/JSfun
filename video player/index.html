@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Video player</title>
+</head>
+<body>
+    <div class="player">
+        <video class="video_player view" src="THE MOST RANDOM VIDEO ON THE INTERNET.mp4"></video>
+        <div class="controls">
+                <div class="progress">
+                        <div class="progress_filled"></div>
+                </div>
+            <button class="player_button toggle">
+                    <i class="fas fa-play"></i> 
+            </button>
+            <!-- <button class="player_button toggle">
+                    <i class="fas fa-pause"></i>
+            </button> -->
+            <i class="fas fa-volume-up"></i>
+            <input type="range" name="volume" class="player_slider" min="0" max="1" step="0.05" value="1">
+            <input type="range" name="playBack" class="player_slider" min="0.5" max="2" step="0.1" value="1">
+            
+            <button data-skip="-10" class="player_button skip">10s
+                    <i class="fas fa-backward"></i>
+            </button>
+            <button data-skip="25" class="player_button skip">25s
+                    <i class="fas fa-forward"></i>
+            </button>
+        </div>
+    </div>
+  <script src="main.js"></script>  
+</body>
+</html>
